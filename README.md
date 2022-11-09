@@ -8,22 +8,22 @@
 
 <h3> :memo:Quantas vezes Natalie Portman foi indicada ao Oscar?</h3>
 
->:white_check_mark: Natalie Portman foi indicada 3. 
+> Natalie Portman foi indicada 3. 
 >
-> SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
+> :white_check_mark: SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
 
 <h3> :memo:Quantos Oscars Natalie Portman ganhou?</h3>
 
->:white_check_mark:Natalie Portman ganhou 1 vez.
+> Natalie Portman ganhou 1 vez.
 >
->SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
+> :white_check_mark:SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
 
 
 <h3>:memo:Amy Adams já ganhou algum Oscar?</h3>
 
-> :white_check_mark:Amy Adams não ganhou Oscar.
+> Amy Adams não ganhou Oscar.
 > 
->SELECT * FROM oscar WHERE name LIKE "Amy Adams";
+> :white_check_mark:SELECT * FROM oscar WHERE name LIKE "Amy Adams";
 
 
 <h3>:memo:Alguém já ganhou um Oscar e tem o seu primeiro nome?</h3>
@@ -33,17 +33,34 @@
 
 <h3>:memo:Toy Story 3 ganhou um Oscar em quais anos?</h3>
 
-> :white_check_mark:O filme Toy Story 3 ganhou 2 vezes no mesmo ano 2011.
+> O filme Toy Story 3 ganhou 2 vezes no mesmo ano 2011.
 >
-> SELECT * FROM oscar WHERE film LIKE "Toy Story 3";
+> :white_check_mark:SELECT * FROM oscar WHERE film LIKE "Toy Story 3";
 
 
 <h3>:memo:Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?</h3>
-<br>
+
+> A categoria de melhor Filme, com 318.
+> 
+> :radioactive: SELECT COUNT() FROM oscarWHERE categoryLIKE "Actor"; SELECT COUNT() FROM oscar WHERE category LIKE "CINEMATOGRAPHY";
+
 <h3>:memo:O primeiro Oscar para melhor Atriz foi para quem? Em que ano?</h3>
-<br>
+
+> O primeiro Oscar foi para Janet Gaynor, no ano de 1928
+> 
+> :white_check_mark: SELECT * FROM oscar WHERE category LIKE "actress"
+
 <h3>:memo:Na categoria Winner, altere todos os valores com "True" para 1 e todos os valores "False" para 0.</h3>
-<br>
+
+>:white_check_mark:<br>
+>UPDATE oscar <br>
+>SET winner= '1' <br>
+>WHERE winner='true'; <br>
+>
+>  UPDATE oscar <br>
+>  SET winner= '0' <br>
+>  WHERE winner='false';<br>
+
 <h3>:memo:Em qual edição do Oscar "Crash" ganhou o prêmio?</h3>
 <br>
 <h3>:memo:Que filme merecia ganhar um Oscar e não ganhou?</h3>
