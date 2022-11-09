@@ -6,14 +6,34 @@
 
 >SELECT COUNT(*) FROM tabela_exemplo WHERE coluna_exemplo = "Novo Valor";<br>SELECT * FROM tabela_exemplo WHERE coluna_exemplo = "Novo Valor"  AND coluna_exemplo2 = "Outro Valor";<br>SELECT * FROM tabela_exemplo WHERE coluna_exemplo LIKE 'eda';<br>UPDATE tabela_exemplo SET coluna_exemplo = "Novo Valor" WHERE id = 1;<br>INSERT INTO tabela_exemplo (coluna_1, coluna_2) VALUES ("VALOR 1", "VALOR 2");
 
+<h3> :memo:Quantas vezes Natalie Portman foi indicada ao Oscar?</h3>
+
+<br>
+
+> Natalie Portman foi indicada 3. 
+>
+> SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
+
 <h3> :memo:Quantos Oscars Natalie Portman ganhou?</h3>
-
 <br>
 
-<h3:memo:Amy Adams já ganhou algum Oscar?</h3>
+>Natalie Portman ganhou 1 vez.
+>
+>SELECT * FROM oscar WHERE name LIKE "Natalie Portman"
+
+
+<h3>:memo:Amy Adams já ganhou algum Oscar?</h3>
 <br>
-<h3:memo:Alguém já ganhou um Oscar e tem o seu primeiro nome?</h3>
+
+> Amy Adams não ganhou Oscar.
+> 
+>SELECT * FROM oscarWHERE nameLIKE "Amy Adams";
+
+
+<h3>:memo:Alguém já ganhou um Oscar e tem o seu primeiro nome?</h3>
 <br>
+
+
 <h3>:memo:Toy Story 3 ganhou um Oscar em quais anos?</h3>
 <br>
 <h3>:memo:Quem tem mais Oscars: a categoria "Melhor Ator" ou "Melhor Filme"?</h3>
